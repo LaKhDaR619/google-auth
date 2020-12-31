@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const cookieSession = require("cookie-session");
@@ -5,7 +7,7 @@ const cookieSession = require("cookie-session");
 const passport = require("passport");
 require("./passport-setup");
 
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
